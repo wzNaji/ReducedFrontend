@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduced Chatbot Interface</title>
+    <link rel="stylesheet" href="chatbotStyle.css">
+</head>
+<body>
+    <header>
+        <img src="images/ReducedLogo.png" alt="Company Logo" class="logo">
+    </header>
+    <div class="container">
+        <h1>Chat med Diana</h1>
+        <label for="message">Enter your message:</label>
+        <textarea id="message" placeholder="Type your message here..."></textarea>
+        
+        <button id="sendMessageButton">Send Message</button>
+        
+        <div id="responseContainer">
+            <h2>Response</h2>
+            <p id="responseText"></p>
+            <p id="tokenUsage"></p>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
