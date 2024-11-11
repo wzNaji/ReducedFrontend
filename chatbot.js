@@ -10,7 +10,8 @@ async function sendMessage() {
         return;
     }
 
-    const url = `http://localhost:8080/api/chatbot/reduced?message=${encodeURIComponent(message)}`;
+    const url = `https://reducedchatbotapi.azurewebsites.net/api/chatbot/reduced?message=${encodeURIComponent(message)}`;
+
 
     try {
         const response = await fetch(url);
